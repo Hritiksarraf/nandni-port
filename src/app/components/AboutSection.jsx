@@ -8,34 +8,81 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
+      <div className="space-y-6 mt-6">
+        {/* Professional Skills Section */}
+        <div className="bg-[#1E1E1E] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <h3 className="text-2xl font-bold text-[#D92E7E]">Professional Skills</h3>
+          <ul className="list-disc pl-6 text-gray-300 mt-2">
+            <li>MS Excel (Amateur)</li>
+            <li>Power BI (Beginner)</li>
+            <li>Data Analysis & Visualization</li>
+            <li>Financial Modeling</li>
+            <li>Market Research</li>
+          </ul>
+        </div>
+
+        {/* Soft Skills Section */}
+        <div className="bg-[#1E1E1E] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <h3 className="text-2xl font-bold text-[#D92E7E]">Soft Skills</h3>
+          <ul className="list-disc pl-6 text-gray-300 mt-2">
+            <li>Communication</li>
+            <li>Teamwork & Collaboration</li>
+            <li>Leadership</li>
+            <li>Problem-Solving</li>
+            <li>Critical Thinking</li>
+          </ul>
+        </div>
+      </div>
     ),
   },
   {
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
+      <div className="space-y-6 mt-6">
+        {/* Education Item 1 */}
+        <div className="bg-[#1E1E1E] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <span className="text-2xl font-bold text-[#D92E7E]">PGDM in Finance</span>
+          <p className="text-lg text-gray-300 mt-2">ISBR Business School, Bangalore (2024–2026)</p>
+        </div>
+
+        {/* Education Item 2 */}
+        <div className="bg-[#1E1E1E] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <span className="text-2xl font-bold text-[#D92E7E]">B.Com</span>
+          <p className="text-lg text-gray-300 mt-2">Mount Carmel College, Bangalore — 7.7 CGPA (2020–2023)</p>
+        </div>
+
+        {/* Education Item 3 */}
+        <div className="bg-[#1E1E1E] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <span className="text-2xl font-bold text-[#D92E7E]">12th Grade</span>
+          <p className="text-lg text-gray-300 mt-2">NITTE International School — 90% (2019–2020)</p>
+        </div>
+
+        {/* Education Item 4 */}
+        <div className="bg-[#1E1E1E] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <span className="text-2xl font-bold text-[#D92E7E]">10th Grade</span>
+          <p className="text-lg text-gray-300 mt-2">NITTE International School — 71.6% (2017–2018)</p>
+        </div>
+      </div>
     ),
   },
   {
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      </ul>
+      <div className="space-y-6 mt-6">
+        {/* Certification 1 */}
+        <div className="bg-[#1E1E1E] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <h3 className="text-2xl font-bold text-[#D92E7E]">Master Microsoft Office 365 and Power</h3>
+          <p className="text-lg text-gray-300 mt-2">Pursuing</p>
+        </div>
+
+        {/* Certification 2 */}
+        <div className="bg-[#1E1E1E] p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <h3 className="text-2xl font-bold text-[#D92E7E]">Discounted Cash Flow Modeling</h3>
+          <p className="text-lg text-gray-300 mt-2">Coursera Project Network (Pursuing)</p>
+        </div>
+      </div>
     ),
   },
 ];
@@ -52,17 +99,13 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+      <div className="md:grid md:grid-cols-2 gap-6 items-center py-8  xl:gap-16 sm:py-16 xl:px-16">
+        <Image src="/me.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            I’m Nandini Upadhayay, a commerce graduate and a passionate learner, currently diving deeper into the world of finance through my PGDM at ISBR Business School, Bangalore. Over the years, I’ve explored roles in sales, marketing, and client management, while also leading teams and volunteer initiatives that strengthened my leadership and organizational skills. I believe in staying curious, thinking creatively, and working strategically to solve problems and drive success.
+            This portfolio is a glimpse into my academic, professional, and personal journey — the experiences that have shaped me, the skills I’ve built, and the values I bring to every opportunity I take on. Thanks for visiting!
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

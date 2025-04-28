@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import { Instagram, Mail } from '@mui/icons-material';
 import Link from "next/link";
 import Image from "next/image";
 
@@ -44,17 +45,19 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+          I’m currently seeking exciting internship and entry-level opportunities in finance, business strategy, or client management. If my journey and skills resonate with your organization, I would love to connect!
+
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/nandini-upadhayay-851799247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
+          <Link href="https://www.linkedin.com/in/nandini-upadhayay-851799247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+        <Instagram sx={{ fontSize: 50, color: "white", cursor: "pointer" }} />
+      </Link>
+      <Link href="mailto:nandiniupadhayay6@gmail.com" target="_blank" rel="noopener noreferrer">
+        <Mail sx={{ fontSize: 50, color: "white", cursor: "pointer" }} />
+      </Link>
         </div>
       </div>
       <div>
@@ -77,7 +80,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
+                placeholder="nandiniupadhayay6@gmail.com"
               />
             </div>
             <div className="mb-6">
