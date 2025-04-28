@@ -52,12 +52,12 @@ const EmailSection = () => {
           <Link href="https://www.linkedin.com/in/nandini-upadhayay-851799247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
-          <Link href="https://www.linkedin.com/in/nandini-upadhayay-851799247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.instagram.com/nandini.u_/" target="_blank" rel="noopener noreferrer">
         <Instagram sx={{ fontSize: 50, color: "white", cursor: "pointer" }} />
       </Link>
-      <Link href="mailto:nandiniupadhayay6@gmail.com" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:nandiniupadhayay6@gmail.com" target="_blank" rel="noopener noreferrer">
         <Mail sx={{ fontSize: 50, color: "white", cursor: "pointer" }} />
-      </Link>
+      </a>
         </div>
       </div>
       <div>
